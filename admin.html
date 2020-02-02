@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<style>
+		* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 1s;
+        }
+
+        h2{
+        	text-align: center;
+        	flex-flow: 30px;
+        }
+        table{
+        	padding-left: 10px;
+        	font-size: 16px;
+            padding: 5px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border: none;
+        }
+        table td{
+          padding: 0px 3px 3px 0px;
+        }
+        table th{
+          padding: 0px 10px 10px 0px;
+        }
+
+		h3{
+			text-align: center;
+			font-size: 50px;
+		}
+		.left {
+            width: 100%;
+            background-color: gray;
+            padding: 10px 100px;
+        }
+		.left ul li {
+            width: 100px;
+            float: left;
+            list-style-type: none;
+        }
+        .left button{
+        	float: right;
+        }
+        .left ul li a {
+            text-decoration: none;
+            color: white;
+            transition: all 1s;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .left ul li button{
+                }
+        .left ul li a:hover {
+            color: #aaa;
+            background-color: rgba(0, 0, 0, .4);
+        }
+        .clearfix::after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+        
+
+	</style>
+</head>
+<body>
+    <h3>Admin Panal</h3>
+    <div class="left clearfix">
+        <ul id="menu" class="nav navbar-nav">
+            <li><a title="Entry" href="#a">Entry</a></li>
+            <li><a title="Places" href="#b">Places</a></li>
+        </ul>    	
+            	<button>Log Out</button>
+    </div>
+
+
+    <!-- Entry Section    -->
+        <section class="entry-section" id="a">
+        <div class="heading">
+            <h2>Tourist Travel Plan Entry</h2>
+        </div>
+        <form action="">
+        	<table>
+             <tr>
+             	<td><label for="to-name"> Tourist Name </label></td>
+                <td><label for="chkin-plc"> Checked In Place </label></td>
+                <td><label for="dest-plc"> Destination </label></td>
+                <td><label for="ttoreach"> Estimated time to reach  </label></td>
+                <td><label for="cur-pos"> current position  </label></td>
+                <td><label for="tr-stat"> travel status </label></td>
+                <td><label for="send-yes"> YES </label></td>
+                <td><label for="send-no"> NO </label></td>
+             </tr>
+             <tr>
+             	<th><input type="text" placeholder="Tourist Name" id="to-name"></th>
+             	<th><input type="text" placeholder="Checkin From" id="chkin-plc"></th>
+             	<th><input type="text" placeholder="Destination" id="dest-plc"></th>
+             	<th><input type="text" placeholder="estimated Time" id="ttoreach"></th>
+             	<th><input type="text" placeholder="Current Position" id="cur-pos"></th>
+             	<th><input type="text" placeholder="Travel status" id="tr-stat"></th>
+             	<th><input type="radio" name="send-ref" id="send-yes"></th>
+             	<th><input type="radio" name="send-ref" id="send-no" checked></th>
+             	<th><button><input type="button" value="Save/Update"></button></th>
+             </tr>
+            </table>
+        </form>
+    </section>
+
+     <section class="display-section" style="text-align: center;padding: 50px 0px;font-size: 18px;background-color: yellowgreen;">
+        <center>
+            <table  style="width:70%;">
+            	<tr>
+                <td><label for="to-name"> Place Tags</label></td>
+                <td><label for="chkin-plc"> Place Name </label></td>
+                <td><label for="dest-plc"> Place Description </label></td>
+                <td><label for="ttoreach"> Place Photos </label></td>
+                </tr>
+                <tr>
+                <th><input type="text" placeholder="Place Tags" id="to-name"></th>
+             	<th><input type="text" placeholder="Place Name" id="chkin-plc"></th>
+             	<th><input type="text" placeholder="Place Description" id="dest-plc"></th>
+             	<th><input type="text" placeholder="Place Photos" id="ttoreach"></th>
+             	<th><button><input type="button" value="Save/Update"></button></th>
+                </tr>
+                
+            </table>
+        </center>
+    </section>
+
+
+</body>
+</html>
