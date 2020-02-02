@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <title>Hackthon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hackthon</title>
+
+    <style>
+        .container {
+            position: relative;
+        }
+        
+        .sub-main-w3 {
+            display: -webkit-flex;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        .sub-main-w3 form {
+            max-width: 600px;
+            margin: 0 5vw;
+            background: linear-gradient(to right, rgba(245, 66, 157, 0.61), rgba(165, 203, 251, 0.62));
+            background: rgba(6, 6, 6, 0.42);
+            padding: 3.5vw;
+            box-sizing: border-box;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            box-shadow: 3px 6px 12px 1px rgba(0, 0, 0, 0.24);
+        }
+        
+        .sub-main-w3 label {
+            font-size: 14px;
+            color: #fff;
+            display: inline-block;
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+        
+        .sub-main-w3 label i {
+            font-size: 15px;
+            margin-right: 5px;
+            color: #f76b53;
+            line-height: 1.9;
+            text-align: center;
+        }
+        
+        .sub-main-w3 input[type="submit"] {
+            color: #fff;
+            background: #f76b53;
+            border: none;
+            padding: 14px 0;
+            margin-top: 30px;
+            outline: none;
+            width: 32%;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            -webkit-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            transition: 0.5s all;
+            box-shadow: 2px 4px 13px 1px rgba(0, 0, 0, 0.42);
+        }
+        
+        .sub-main-w3 input[type="submit"]:hover {
+            opacity: .7;
+            -webkit-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            transition: 0.5s all;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Login Form </h1>
+
+    <div class="container">
+
+        <div class="sub-main-w3">
+            <form action="" method="POST">
+                <div class="form-style-agile">
+                    <label>Username</label>
+                    <input placeholder="Username" name="username" type="text" required="">
+                </div>
+                <div class="form-style-agile">
+                    <label>Password</label>
+                    <input placeholder="Password" name="password" type="password" required="">
+                </div>
+                <input type="submit" name="login" value="Log In">
+            </form>
+        </div>
+    </div>
+
+    <!-- 
+	<script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script> -->
+</body>
+
+</html>
