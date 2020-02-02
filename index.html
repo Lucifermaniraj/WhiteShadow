@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hackthon</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        table td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Travel  Section Search -->
+    <section class="search-section">
+        <div class="heading">
+            <h2>Tourist Travel Status</h2>
+        </div>
+        <div class="form-group">
+            <label for="tname">Name</label>
+            <input type="text" value="Tourist Name" id="tname">
+        </div>
+        <div class="form-group">
+            <label for="cin">Checked In / Start Place </label>
+            <input type="text" value="Checked In Place" id="cin">
+        </div>
+        <div class="form-group">
+            <label for="dest">Destination</label>
+            <input type="text" value="Checked In Place" id="dest">
+        </div>
+        <div class="form-group">
+            <input type="button" value="Search">
+        </div>
+    </section>
+    <!-- travel section search ends -->
+
+    <!-- travel section display -->
+    <section class="display-section" style="text-align: center;">
+        <center>
+            <table border="1" style="width:70%;">
+                <tr>
+                    <th>S.N.O.</th>
+                    <th>Name</th>
+                    <th>Checked in from</th>
+                    <th>Destination</th>
+                    <th>Time to reach</th>
+                    <th>current position</th>
+                    <th>travel status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>sp</td>
+                    <td>btl</td>
+                    <td>palpa</td>
+                    <td>1.30</td>
+                    <td>jordhara</td>
+                    <td>travelling</td>
+                </tr>
+            </table>
+        </center>
+    </section>
+    <!-- travel section display ends  -->
+
+
+    <!-- travel section entry -->
+    <section class="entry-section">
+        <div class="heading">
+            <h2>tourist travel plan entry</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="to-name"> Tourist Name </label>
+            <input type="text" placeholder="Tourist Name" id="to-name">
+        </div>
+        <div class="form-group">
+            <label for="chkin-plc"> Checked In Place </label>
+            <input type="text" placeholder="Checkin From" id="chkin-plc">
+        </div>
+        <div class="form-group">
+            <label for="dest-plc"> Destination </label>
+            <input type="text" placeholder="Destination" id="dest-plc">
+        </div>
+        <div class="form-group">
+            <label for="ttoreach"> Estimated time to reach  </label>
+            <input type="text" placeholder="estimated Time" id="ttoreach">
+        </div>
+        <div class="form-group">
+            <label for="cur-pos"> current position  </label>
+            <input type="text" placeholder="Current Position" id="cur-pos">
+        </div>
+        <div class="form-group">
+            <label for="tr-stat"> travel status </label>
+            <input type="text" placeholder="Travel status" id="tr-stat">
+        </div>
+        <div class="form-group">
+            <div>
+                <h3>Send Rescue Team?</h3>
+            </div>
+            <label for="send-yes"> YES </label>
+            <input type="radio" name="send-ref" id="send-yes">
+            <label for="send-no"> NO </label>
+            <input type="radio" name="send-ref" id="send-no" checked>
+
+        </div>
+        <div class="form-group">
+            <input type="button" value="save/update">
+        </div>
+
+    </section>
+    <!-- travel section entry ends  -->
+
+
+
+</body>
+
+</html>
