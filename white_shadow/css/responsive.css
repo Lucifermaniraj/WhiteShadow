@@ -1,0 +1,1189 @@
+/* =========================================
+                Mobile Menu
+============================================ */
+
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* hide mobile nav open btn */
+    display: none;
+}
+
+#mobile-nav {
+    /* by default, mobile nav will be hidden with height 0% */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, .9);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: blue;
+    background: none;
+}
+
+
+/* Mobile nav scroll spy active state */
+
+.white-nav-top #mobile-nav ul.nav>li.active>a {
+    color: blue;
+    font-weight: 500;
+}
+
+
+/*==================================================
+			Bootstrap 3 Media Queries        
+==================================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    .navbar-brand img {
+        left: 30px;
+    }
+    ul.nav li a {
+        padding: 10px;
+    }
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 20px;
+    }
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    /*home*/
+    #home-intro .horizontal-heading h2 {
+        font-size: 23px;
+    }
+    #intro-table-03 h5 {
+        font-size: 15px;
+    }
+    #intro-table-03 p {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    #intro-table-02 p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    #intro-table-01 li {
+        padding: 8px;
+    }
+    #service-table-01 h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #service-table-02 p {
+        font-size: 17px;
+    }
+    #offer-table-01 h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #offer-table-01 p {
+        font-size: 15px;
+    }
+    /* Services 02 */
+    #service-tab-1 .tab-bg {
+        padding: 43px 30px;
+        min-height: 300px;
+    }
+    #service-tab-2 .tab-bg {
+        padding: 40px 30px;
+        min-height: 300px;
+    }
+    #service-tab-3 .tab-bg {
+        padding: 40px 30px;
+        min-height: 300px;
+    }
+    #service-tab-4 .tab-bg {
+        padding: 23px 30px;
+        min-height: 300px;
+    }
+    .service-tab p {
+        line-height: 20px;
+    }
+    #philosophy .policy-table p {
+        margin-bottom: 5px;
+    }
+    #about-company-table-02 img {
+        margin-left: 40px;
+    }
+    .panel-default .panel-body {
+        font-size: 13px;
+        padding: 9px;
+    }
+    #collapseTwo .panel-body {
+        padding: 10px;
+    }
+    #collapseFour .panel-body {
+        font-size: 13px;
+        padding: 2px;
+    }
+    .skill-text {
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        padding: 70px 10px;
+        color: #fff;
+    }
+    .project-table .type h4 {
+        font-size: 20px;
+    }
+    #client-jv P {
+        transform: translateX(50px);
+    }
+    #client-jv img {
+        height: 100px;
+        width: 200px;
+        transform: translateY(-50px);
+    }
+    #project-table-07 h4 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    ul.nav li a {
+        padding: 8px;
+    }
+    ul.navbar-nav>li>a {
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
+    .navbar-brand img {
+        left: 30px;
+    }
+    /* Home */
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+    #home-intro .horizontal-heading h2 {
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0;
+    }
+    #home-intro hr {
+        width: 70px;
+    }
+    #intro-table-01 ul li {
+        padding: 12px;
+    }
+    #intro-table-01 ul li a {
+        font-size: 12px;
+    }
+    #intro-table-02 p {
+        font-size: 13px;
+    }
+    #intro-table-03 h5 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #intro-table-03 h4 {
+        font-size: 14px;
+    }
+    #intro-table-03 p {
+        font-size: 12px;
+        margin-bottom: 17px;
+    }
+    .horizontal-heading h2 {
+        font-size: 35px;
+    }
+    #home-services p {
+        font-size: 15px;
+    }
+    #service-table-01 h3 {
+        font-size: 17px;
+    }
+    #service-table-01 p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    #service-table-02 h3 {
+        font-size: 20px;
+    }
+    #service-table-02 p {
+        font-size: 13px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    #service-table-03 h3 {
+        font-size: 20px;
+    }
+    #service-table-03 p {
+        font-size: 13px;
+    }
+    #home-offer h2 {
+        font-size: 25px;
+    }
+    #offer-table-02 i {
+        font-size: 20px;
+    }
+    #offer-table-03 i {
+        font-size: 20px;
+    }
+    #offer-table-02 h4 {
+        font-size: 17px;
+    }
+    #offer-table-03 h4 {
+        font-size: 17px;
+    }
+    #offer-table-03 p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    #offer-table-02 p {
+        margin-bottom: 25px;
+    }
+    #offer-table-01 .horizontal-heading {
+        margin-bottom: 15px;
+    }
+    #offer-table-01 p {
+        margin-bottom: 30px;
+    }
+    #offer-table-01 .btn-general {
+        margin-bottom: 15px;
+    }
+    #home-test p {
+        font-size: 17px;
+    }
+    #test-table-01 img {
+        margin-left: 0px;
+    }
+    #test-table-01 .voice p {
+        font-size: 15px;
+        margin: 0;
+    }
+    #test-table-04 h2 {
+        margin-bottom: 40px;
+    }
+    #test-table-04 p {
+        margin-bottom: 30px;
+    }
+    #test-table-04 .btn-general {
+        margin-bottom: 20px;
+        margin-top: 18px;
+    }
+    /*about*/
+    #about-01 #about-right p {
+        font-size: 13px;
+    }
+    #about-02 #about-item-01 p {
+        margin-bottom: 40px;
+        margin-top: 38px;
+    }
+    #about-02 #about-item-02 p {
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    #philosophy .policy-table p {
+        font-size: 13px;
+    }
+    #philosophy h2 {
+        font-size: 25px;
+    }
+    #about-management h2 {
+        font-size: 25px;
+    }
+    #objective h2 {
+        font-size: 25px;
+    }
+    #about-company h2 {
+        font-size: 25px;
+    }
+    #about-faq h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    #about-faq .btn-general {
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+    #collapseThree .panel-body {
+        margin-bottom: 20px;
+    }
+    #collapseFour .panel-body {
+        font-size: 13.5px;
+    }
+    /*core business*/
+    #watersupply p {
+        font-size: 13px;
+    }
+    #watersupply h2 {
+        font-size: 25px;
+    }
+    #watertrans p {
+        font-size: 13px;
+    }
+    #watertrans h2 {
+        font-size: 25px;
+    }
+    #irrigation p {
+        font-size: 13px;
+    }
+    #irrigation h2 {
+        font-size: 25px;
+    }
+    #Road p {
+        font-size: 13px;
+    }
+    #Road h2 {
+        font-size: 25px;
+    }
+    #bridge p {
+        font-size: 13px;
+    }
+    #bridge h2 {
+        font-size: 25px;
+    }
+    #building p {
+        font-size: 13px;
+    }
+    #building h2 {
+        font-size: 25px;
+    }
+    #sewer p {
+        font-size: 13px;
+    }
+    #sewer h2 {
+        font-size: 25px;
+    }
+    #sewer ul li a {
+        font-size: 13px;
+    }
+    /* Generic */
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    /* Tech Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /* Services 02 */
+    #service-equip h2 {
+        font-size: 30px;
+    }
+    #equip-table h2 {
+        font-size: 30px;
+    }
+    #service-work h2 {
+        font-size: 30px;
+    }
+    #service-skill h2 {
+        font-size: 30px;
+    }
+    #service-tab-1 .tab-bg {
+        padding: 15px 30px;
+        min-height: 200px;
+    }
+    #service-tab-1 img {
+        min-height: 388px;
+    }
+    #service-tab-2 .tab-bg {
+        padding: 15px 30px;
+        min-height: 200px;
+    }
+    #service-tab-2 img {
+        min-height: 385px;
+    }
+    #service-tab-3 .tab-bg {
+        padding: 15px 30px;
+        min-height: 200px;
+    }
+    #service-tab-3 img {
+        min-height: 408px;
+    }
+    #service-tab-4 .tab-bg {
+        padding: 15px 30px;
+        min-height: 200px;
+    }
+    #services-tabs h3 {
+        font-size: 25px;
+    }
+    #service-tab-4 img {
+        min-height: 436px;
+    }
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    /* Tab active state */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: red;
+        font-weight: 700;
+        border-bottom: 3px solid blue;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    .skill-text {
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        padding: 50px 10px;
+        color: #fff;
+    }
+    /*service*/
+    .service h4 {
+        font-size: 20px;
+    }
+    /*financial*/
+    #jv h2 {
+        font-size: 30px;
+    }
+    #jv hr {
+        width: 300px;
+    }
+    #bhimeshwor h2 {
+        font-size: 30px;
+    }
+    #bhimeshwor hr {
+        width: 400px;
+    }
+    /* Project */
+    #isotope-filters span {
+        font-size: 10px;
+    }
+    .project-table .type h4 {
+        margin: 20px 0 20px 6px;
+        font-size: 20px;
+    }
+    .project-table p {
+        font-size: 12px;
+    }
+    #project-table-03 p {
+        font-size: 11px;
+    }
+    /* Stats */
+    .stats-item p {
+        line-height: 18px;
+    }
+    /*client*/
+    #client-road .road-heading h2 {
+        font-size: 30px;
+    }
+    #client-road hr {
+        width: 100px;
+    }
+    .client-table .horizontal-heading h2 {
+        font-size: 25px;
+    }
+    #client-jv h2 {
+        font-size: 30px;
+    }
+    #client-jv p {
+        font-size: 15px;
+        margin-left: 60px;
+    }
+    #client-jv img {
+        margin-left: 20px;
+        width: 150px;
+        height: 100px;
+    }
+    /* Contact */
+    ul.office-details li {
+        margin-right: 15px;
+    }
+    ul.office-details li i {
+        width: 25px;
+    }
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+
+@media (max-width: 767px) {
+    /* Navigaiton */
+    .navbar {
+        padding: 15px 0;
+    }
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+    /* show mobile nav open btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    /* Home */
+    #home-heading h1 {
+        font-size: 22px;
+    }
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    .intro-table {
+        padding: 20px 40px;
+        margin-bottom: 50px;
+    }
+    #intro-table-01 ul li {
+        margin-left: 35%;
+    }
+    #intro-table-03 {
+        text-align: center;
+    }
+    #home-services .service-table img {
+        height: 300px;
+        width: 100%;
+    }
+    #home-services .service-table {
+        padding: 20px 40px;
+        margin-bottom: 50px;
+    }
+    #home-project .homeproject-table {
+        padding: 20px 40px;
+        margin-bottom: 50px;
+    }
+    #home-project .homeproject-table img {
+        height: 300px;
+        width: 100%;
+    }
+    #homeproject-table-01 {
+        margin-top: 15px;
+    }
+    #home-offer .offer-table {
+        padding: 20px 40px;
+        margin-bottom: 50px;
+    }
+    .offer-table .icon i {
+        transform: translateY(35px);
+    }
+    #home-test .test-table {
+        padding: 20px 40px;
+        margin-bottom: 50px;
+    }
+    .test-table .test-image img {
+        margin-left: 43%;
+    }
+    /* Generic */
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    .footer-table {
+        padding: 20px 40px;
+        margin-bottom: 5px;
+    }
+    #footer-table-03 {
+        text-align: center;
+    }
+    #footer-table-04 {
+        text-align: center;
+    }
+    #footer-table-02 {
+        margin-left: 30%;
+    }
+    #footer-table-01 {
+        margin-left: 30%;
+    }
+    /*top-statement*/
+    .top-statement .toptech-statement h3 {
+        font-size: 40px;
+    }
+    /* About 01 */
+    /* Large Content Box */
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    /* Vertical heading */
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+    #about-left {
+        margin-bottom: 50px;
+    }
+    #about-right {
+        text-align: center;
+    }
+    /* About 02 */
+    /* Medium Content Box */
+    .content-box-md {
+        padding: 80px 0;
+    }
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .about-item i {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+    }
+    /*philosophy*/
+    .philosophy-table ul li {
+        margin-left: 120px;
+    }
+    .philosophy-table {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .policy-table {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    #about-company h2 {
+        font-size: 25px;
+    }
+    #about-company ul li {
+        margin-left: 140px;
+    }
+    #about-contact-left {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    #about-contact-right {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    /*core business*/
+    .core-table .col-md-6 {
+        padding: 20px 30px;
+        margin-bottom: 10px;
+    }
+    .core-table .col-sm-6 {
+        padding: 20px 30px;
+        margin-bottom: 10px;
+    }
+    /* Team */
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+    .skill h4 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    /* Tech Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #people .row {
+        padding: 20px 50px;
+    }
+    /* Services 01 */
+    /* Horizontal heading */
+    .horizontal-heading {
+        margin-bottom: 40px;
+    }
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+    #services-01 img {
+        margin: 35px 0;
+    }
+    .service,
+    .service .icon {
+        text-align: center;
+    }
+    .service h4 {
+        font-size: 18px;
+    }
+    /* Services 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    /* Tab active state */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: red;
+        font-weight: 700;
+        border-bottom: 3px solid blue;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    #services-tabs .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+    #services-tabs h2 {
+        font-size: 40px;
+    }
+    #services-tabs h3 {
+        font-size: 28px;
+    }
+    #service-equip .row {
+        padding: 20px 50px;
+    }
+    #service-equip .col-md-4 {
+        padding: 20px;
+    }
+    #equip-table .row {
+        padding: 20px 50px;
+    }
+    #service-work .row {
+        padding: 20px 50px;
+    }
+    #service-work .col-md-4 {
+        padding: 20px;
+    }
+    #service-work .skill-text {
+        padding-top: 160px;
+    }
+    #service-skill .row {
+        padding: 20px 50px;
+    }
+    /*financial*/
+    #jv .jv-table {
+        padding: 20px 50px;
+    }
+    #jv .col-md-6 {
+        padding: 20px 50px;
+    }
+    #jv img {
+        margin-left: 30px;
+    }
+    #jv h2 {
+        font-size: 30px;
+    }
+    #jv hr {
+        width: 280px;
+    }
+    #bhimeshwor .bhimeshwor-table {
+        padding: 20px 50px;
+    }
+    #bhimeshwor .col-md-6 {
+        padding: 20px 50px;
+    }
+    #bhimeshwor img {
+        margin-left: 30px;
+    }
+    #bhimeshwor h2 {
+        font-size: 30px;
+    }
+    #bhimeshwor hr {
+        width: 380px;
+    }
+    /* Portfolio */
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+    /* Pricing */
+    .project-table {
+        margin-bottom: 30px;
+    }
+    .project-table .type h4 {
+        font-size: 28px;
+        margin: 20px 0 20px 16px;
+    }
+    .project-table .image img {
+        height: 300px;
+        width: 100%;
+    }
+    /* Stats */
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i {
+        font-size: 30px;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+    }
+    /*client*/
+    #client-road .road-heading h2 {
+        font-size: 30px;
+    }
+    #client-road hr {
+        width: 100px;
+    }
+    .client-table .horizontal-heading h2 {
+        font-size: 25px;
+    }
+    .client-table .row {
+        padding: 20px 50px;
+    }
+    .client-table .col-md-6 {
+        padding: 20px;
+    }
+    #client-jv h2 {
+        font-size: 30px;
+    }
+    #client-jv hr {
+        width: 120px;
+    }
+    #client-jv P {
+        margin-left: 0;
+    }
+    #client-jv img {
+        margin-left: 420px;
+        width: 150px;
+    }
+    /* Contact */
+    #contact-left {
+        text-align: center;
+    }
+    .office {
+        margin-bottom: 40px;
+    }
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 480px) {
+    /* Home */
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+    .navbar {
+        padding: 5px 0;
+    }
+    #intro-table-01 ul li {
+        margin-left: 90px;
+    }
+    #home-services p {
+        font-size: 15px;
+    }
+    #home-statement P {
+        font-size: 15px;
+    }
+    #home-project .homepreoject-table P {
+        font-size: 15px;
+    }
+    #home-test img {
+        margin-left: 140px;
+    }
+    #home-test p {
+        font-size: 15px;
+    }
+    #footer-table-01 {
+        transform: translateX(-45px);
+    }
+    #footer-table-02 {
+        transform: translateX(-45px);
+    }
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+    /*about*/
+    #about-01 #about-right p {
+        font-size: 15px;
+    }
+    #philosophy ul li {
+        margin-left: 0px;
+    }
+    #about-company .horizontal-heading h2 {
+        font-size: 15px;
+    }
+    #about-company ul li {
+        margin-left: 0;
+    }
+    /* Portfolio */
+    #isotope-filters {
+        text-align: center;
+    }
+    #isotope-filters button {
+        font-size: 10px;
+        padding-right: 14px;
+    }
+    .project-table .type h4 {
+        font-size: 25px;
+        margin: 20px 0 20px 16px;
+    }
+    .project-table .image img {
+        height: 200px;
+        width: 100%;
+    }
+    #client-jv img {
+        margin-left: 250px;
+        width: 150px;
+        transform: translateY(-100px);
+    }
+    #client-jv p {
+        font-size: 15px;
+        transform: translateX(-2px);
+        margin-left: 10px;
+    }
+    .client-table .horizontal-heading h2 {
+        font-size: 18px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 320px) {
+    .navbar {
+        padding: 5px 0;
+    }
+    .navbar-brand img {
+        height: 40px;
+        top: 5px;
+    }
+    /*home*/
+    .carousel-inner>.item>img {
+        height: 450px;
+    }
+    #intro-table-01 ul li {
+        margin-left: 40px;
+    }
+    #intro-table-02 p {
+        font-size: 13px;
+    }
+    #home-services .service-table img {
+        height: 200px;
+    }
+    .service-table .type h3 {
+        font-size: 18px;
+    }
+    #home-project .homeproject-table img {
+        height: 200px;
+    }
+    .homeproject-table .type h3 {
+        font-size: 18px;
+    }
+    #home-offer .offer-table h4 {
+        font-size: 15px;
+    }
+    #home-test img {
+        margin-left: 60px;
+    }
+    #home-test p {
+        font-size: 13px;
+    }
+    #footer-table-01 {
+        transform: translateX(-60px);
+    }
+    #footer-table-02 {
+        transform: translateX(-60px);
+    }
+    #footer-table-03 h5 {
+        font-size: 18px;
+    }
+    #footer-table-04 h5 {
+        font-size: 18px;
+    }
+    #footer-table-03 p {
+        font-size: 13px;
+    }
+    #footer-table-04 p {
+        font-size: 13px;
+    }
+    ul.footersocial-list li a {
+        width: 23px;
+        height: 23px;
+        line-height: 23px;
+    }
+    #about-01 #about-right p {
+        font-size: 13px;
+    }
+    .core-table p {
+        font-size: 13px;
+    }
+    #people p {
+        font-size: 13px;
+    }
+    #service-equip h2 {
+        font-size: 25px;
+    }
+    #service-equip hr {
+        width: 100px;
+    }
+    #equip-table h2 {
+        font-size: 20px;
+    }
+    #equip-table hr {
+        width: 100px;
+    }
+    #equip-table p {
+        font-size: 13px;
+    }
+    #service-work h2 {
+        font-size: 25px;
+    }
+    #service-work hr {
+        width: 100px;
+    }
+    #service-skill h2 {
+        font-size: 25px;
+    }
+    #service-skill hr {
+        width: 100px;
+    }
+    #service-skill p {
+        font-size: 13px;
+    }
+    #jv h2 {
+        font-size: 20px;
+    }
+    #jv hr {
+        width: 100px;
+    }
+    #jv p {
+        font-size: 12px;
+    }
+    #jv img {
+        width: 200px;
+        height: 200px;
+    }
+    #bhimeshwor h2 {
+        font-size: 20px;
+    }
+    #bhimeshwor hr {
+        width: 100px;
+    }
+    #bhimeshwor img {
+        height: 200px;
+        width: 200px;
+    }
+    #bhimeshwor p {
+        font-size: 12px;
+    }
+    #client-jv img {
+        width: 100px;
+        transform: translateX(-90px);
+    }
+    #client-jv p {
+        font-size: 12px;
+        transform: translateY(90px);
+    }
+}
