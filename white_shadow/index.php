@@ -58,8 +58,8 @@
                         <div class="collapse navbar-collapse">
                             <ul class="nav  navbar-nav pull-right">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Places</a></li>
-                                <li><a href="#">Travel Status</a></li>
+                                <li><a href="#places">Places</a></li>
+                                <li><a href="login.php">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -72,8 +72,8 @@
                         <div id="mobile-nav-content">
                             <ul class="nav">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Places</a></li>
-                                <li><a href="#">Travel Status</a></li>
+                                <li><a href="#places">Places</a></li>
+                                <li><a href="login.php">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
 
 
     <!-- Travel  Section Search -->
-    <section class="search-section txt-center">
+    <section class="search-section txt-center" id="places">
         <div class="heading">
             <h2>Tourist Travel Status</h2>
         </div>
@@ -364,7 +364,7 @@
             <div class="row ">
                 <div class="col-md-12 col-sm-12 ">
                     <p>
-                        Copyright &copy; 2020 CAN developed by <strong>White Shadow</strong> </span>
+                        Copyright &copy; <a href="http://visitnepal2020.com" target="_blank" title="Go Online For Visit Nepal 2020"> Visit Nepal 2020 </a> developed by <strong>White Shadow</strong> </span>
                     </p>
                 </div>
             </div>

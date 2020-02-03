@@ -2,7 +2,7 @@
 define('dbserver','localhost');
 define('dbname','hackthon');
 define('dbuser','root');
-define('dbpassword','');
+define('dbpassword','toor');
 
 function connect_db(){
 
